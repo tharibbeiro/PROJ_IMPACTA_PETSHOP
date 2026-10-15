@@ -1,0 +1,16 @@
+# Segredos - NUNCA versionar
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Arquivos temporários do Power BI
+*.pbix.lock
+~$*.pbix
+
+# SO
+.DS_Store
+Thumbs.db
