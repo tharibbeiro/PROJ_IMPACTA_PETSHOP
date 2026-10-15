@@ -4,6 +4,9 @@ Projeto de faculdade de dados/BI: pet shop fictício que vende produtos (ração
 petiscos, brinquedos...) e serviços (banho, tosa, consulta veterinária, hotel),
 com 3 camadas — banco de dados, back-end e front-end.
 
+<img width="1315" height="737" alt="image" src="https://github.com/user-attachments/assets/aa576e6d-67b4-4b35-9e93-9831f3117108" />
+
+
 ## Arquitetura
 
 ```
@@ -84,3 +87,4 @@ Para gerar outro conjunto de dados: `cd data && pip install -r requirements.txt 
 | `ResumoPorEspecie` | pets cadastrados x atendimentos por espécie |
 | `TicketMedioPorCliente` | ticket médio e total por cliente |
 | `ClientesRecorrentes` | top 10 clientes com 2+ vendas |
+
