@@ -37,33 +37,14 @@ sql/
 backend/
 ├── processar_metricas.py       -- calcula as métricas e grava em analytics.*
 ├── requirements.txt
-└── .env.example                -- copie para .env e configure sua conexão
+└── .env.example               
 data/
 ├── gerar_dados.py              -- gera o 02_inserir_dados.sql (Faker)
 └── requirements.txt
 dashboard/
-└── (arquivo .pbix do Power BI)
-docs/
-├── guia_dashboard.md           -- layout e passo a passo do painel
-└── roteiro_video.md            -- roteiro do vídeo de demonstração
+├── (arquivo .pbix do Power BI)
+└── logo do pet shop
 ```
-
-## Como rodar
-
-1. **Banco de dados**: no SSMS, rode `sql/01_criar_tabelas.sql`, depois
-   `sql/02_inserir_dados.sql` e confira com `sql/03_consultas_validacao.sql`.
-2. **Back-end**:
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   copy .env.example .env      # (Windows) e edite o SQL_SERVER com o nome do seu servidor
-   python processar_metricas.py
-   ```
-3. **Dashboard**: no Power BI Desktop, conecte no SQL Server, banco
-   `PetShop_Patas_Cia`, e selecione apenas as tabelas do schema **analytics**
-   (veja `docs/guia_dashboard.md`).
-
-Para gerar outro conjunto de dados: `cd data && pip install -r requirements.txt && python gerar_dados.py`.
 
 ## Regras de negócio aplicadas no back-end
 
